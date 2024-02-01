@@ -33,7 +33,7 @@ int main()
     int n2 = 123456;
     std::cout << "Sum of digits in " << n2 << " = " << sum_digits(n2) << std::endl;
 
-    char my_string[] = {"bHellbobb\0"};
+    char my_string[] = {"bHellbo\0"};
     int len = string_length(my_string);
     std::cout << "Number of b's in string \"" << my_string << "\" = " << b_counter(my_string, len, 0) << std::endl;
 
