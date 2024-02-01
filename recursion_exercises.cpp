@@ -3,8 +3,7 @@
 /**
 * ---------------------------------------------------------------------
 * @copyright
-* MIT License
-* Copyright (c) 2024 Kevin27182
+* Copyright 2024 Kevin Nard
 *
 * @author: Kevin Nard
 * @course: Data Structures (CSCI 2320)
