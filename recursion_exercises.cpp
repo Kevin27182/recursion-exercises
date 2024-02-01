@@ -15,6 +15,35 @@
 
 #include <iostream>
 
+int factorial(int n);
+int power(int base, int exponent);
+int sum_digits(unsigned n);
+int b_counter(char* data, int length, int i);
+int string_length(char* data);
+
+int main()
+{
+    int n1 = 5;
+    std::cout << n1 << "! = " << factorial(n1) << std::endl;
+
+    int base = 2;
+    int exp = 3;
+    std::cout << base << "^" << exp << " = " << power(2,3) << std::endl;
+
+    int n2 = 123456;
+    std::cout << "Sum of digits in " << n2 << " = " << sum_digits(n2) << std::endl;
+
+    char my_string[] = {"bHellbobb\0"};
+    int len = string_length(my_string);
+    std::cout << "Number of b's in string \"" << my_string << "\" = " << b_counter(my_string, len, 0) << std::endl;
+
+    char my_string_2[] = {"Hello\0"};
+    std::cout << "Length of string \"" << my_string_2 << "\" = " << string_length(my_string_2) << std::endl;
+
+    std::cout << std::endl << std:: endl;
+    return 0;
+}
+
 int factorial(int n)
 {
     if (0 <= n && n <= 1) // anchor case
@@ -87,27 +116,4 @@ int string_length(char* data)
     {
         return 1 + string_length(data + 1);
     }
-}
-
-int main()
-{
-    int n1 = 5;
-    std::cout << n1 << "! = " << factorial(n1) << std::endl;
-
-    int base = 2;
-    int exp = 3;
-    std::cout << base << "^" << exp << " = " << power(2,3) << std::endl;
-
-    int n2 = 123456;
-    std::cout << "Sum of digits in " << n2 << " = " << sum_digits(n2) << std::endl;
-
-    char my_string[] = {"bHellbo\0"};
-    int len = string_length(my_string);
-    std::cout << "Number of b's in string \"" << my_string << "\" = " << b_counter(my_string, len, 0) << std::endl;
-
-    char my_string_2[] = {"Hello\0"};
-    std::cout << "Length of string \"" << my_string_2 << "\" = " << string_length(my_string_2) << std::endl;
-
-    std::cout << std::endl << std:: endl;
-    return 0;
 }
