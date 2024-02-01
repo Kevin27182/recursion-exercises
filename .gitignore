@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+recursion_exercises.ilk
+recursion_exercises.pdb
+vc140.pdb
+.vscode/tasks.json
